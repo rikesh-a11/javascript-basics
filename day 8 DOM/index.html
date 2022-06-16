@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dom</title>
+    <style>
+        .test{
+            width: 200px;
+            height: 200px;
+            background-color: yellow;
+            display: none;
+        }
+    </style>
+</head>
+<body>
+<!--     
+    <h1 id="app">hello world</h1> -->
+    <!-- <h1 id="name">rikesh</h1> -->
+    <div class="test"></div>
+    <button id="btn">show div</button>
+    <script>
+        let colors =  ["red","yellow","blue","pink","brown"];
+        // document.getElementsByClassName("test").style.display = "none";
+
+        document.getElementById("btn").addEventListener('click',function(){
+            let rand = parseInt(Math.random()*colors.length)
+            document.getElementsByClassName('test')[0].style.display="block";
+            document.getElementsByClassName('test')[0].style.background=colors[rand];
+
+        })
+
+    //   setTimeout(() => document.getElementById("app").innerHTML = "bye world",3000)
+    //   setTimeout(() => document.getElementById("app").style.color = "red",6000)
+
+    // function printname(){
+    // setTimeout(() => document.getElementById("name").innerHTML = "r",2000)
+    // setTimeout(() => document.getElementById("name").style.color = "blue",2000)
+    // setTimeout(() => document.getElementById("name").innerHTML = "ri",3000)
+    // setTimeout(() => document.getElementById("name").style.color = "red",3000)
+    // setTimeout(() => document.getElementById("name").innerHTML = "rik",4000)
+    // setTimeout(() => document.getElementById("name").style.color = "yellow",4000)
+    // setTimeout(() => document.getElementById("name").innerHTML = "rike",6000)
+    // setTimeout(() => document.getElementById("name ").style.color = "orange",6000)
+    // setTimeout(() => document.getElementById("name").innerHTML = "rikes",7000)
+    // setTimeout(() => document.getElementById("name ").style.color = "black",7000)
+    // setTimeout(() => document.getElementById("name").innerHTML = "rikesh",8000)
+    // setTimeout(() => document.getElementById("name").style.color = "pink",8000)
+    // }
+    // printname();
+    // setInterval(printname,9000);
+
+    </script>
+</body>
+</html>

@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> array as object </title>
+</head>
+<body>
+    <script>
+
+        const arr = [
+                 "rik",
+                 "raj",
+                 "ram",
+                 "nabin",
+                 "bibek"];
+
+        const len = arr.length;
+        document.write(len+"<br/>");
+        document.write(arr.sort()+"<br/>");
+
+        document.write(arr[0]+"<br/>");
+        document.write(arr[len-1]+"<br/>");
+        document.write(arr.pop());
+
+        arr.push("rik");                          //add new element in array in last
+        document.write("<br/>"+arr);
+
+y
+        arr.shift();                             // remove first element
+        document.write("<br/>"+arr);
+  
+        arr.unshift("ram");                      //add new element in first
+        document.write("<br/>"+arr);
+
+
+
+    </script>
+</body>
+</html>

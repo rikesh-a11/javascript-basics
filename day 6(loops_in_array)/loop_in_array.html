@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Loops in array </title>
+</head>
+<body>
+    <script>
+        //using for loop
+
+    // const name = ["rik","ram","shyam","bibek"];
+    // for (let index = 0; index < name.length; index++) {
+    //     const element = name[index];
+    //     document.write(`<h2> ${element}</h2>`);
+    // }
+
+
+    // const evenNo = [];
+    // for (let index = 1; index <= 100; index++) {
+    //     if (index%2==0){
+    //         evenNo.push(index);
+    //     }
+    // }
+    // document.write(evenNo);
+   
+    // let sum = 0;
+    // for (let index = 0; index < evenNo.length; index++) {
+    //    sum = sum+evenNo[index];
+
+    // }
+    // document.write("<br/>"+sum+"<br/>");
+
+
+    // using while loop 
+
+    // let index = 0;
+    // while(index<evenNo.length){
+    //     if(evenNo[index]%4==0){
+    //    document.write("<br/>"+evenNo[index]);
+    //     }
+    //     index++;
+    // }
+
+
+        //associative aaray
+        
+        // const AssocArr = [];
+        // AssocArr["name"] = "rikesh";
+        // console.log(AssocArr);
+        // document.write(Array.isArray(evenNo));
+
+
+        let counter= new Array(26).fill(0);
+        // let counter = [0];
+        let name = prompt("enter the name:");
+        for (let index = 0; index < name.length; index++) {
+            const element = name[index];
+
+            if(element==="a"|| element==="A"){
+                counter[0]+=1;
+            }
+            if(element==="b"|| element==="B"){
+                counter[1]+=1;
+            }
+            if(element==="c"|| element==="C"){
+                counter[2]+=1;
+            }
+            if(element==="d"|| element==="D"){
+                counter[3]+=1;
+            }
+            if(element==="e"|| element==="E"){
+                counter[4]+=1;
+            }
+        }
+        document.write(`<h2> ${name} <h2/>`);
+        document.write(`given name contains ${counter[0]} a  <br/>`);
+        document.write(`given name contains ${counter[1]} b <br/>`);
+        document.write(`given name contains ${counter[2]} c <br/>`);
+        document.write(`given name contains ${counter[3]} d <br/>`);
+        document.write(`given name contains ${counter[4]} e <br/>`);
+        
+
+    </script>
+</body>
+</html>

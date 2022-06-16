@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> type coversion</title>
+</head>
+<body>
+    <script>
+
+        // implicit conversion
+
+        var name = 'rikesh';
+        var age = 22;
+        var result = name + age;
+        console.log(`${result} type: ${typeof(result)}`);
+        console.log(`${typeof(name)} and ${typeof(age)} change implicity to ${typeof(result)}`);
+
+        var fname = "rik";
+        var lname = 'stha';
+        console.log(fname-lname);
+
+            // explicit coversion
+        
+        var citizenship = "876538298";
+        console.log(`Data of citizenship ${typeof(citizenship)}`);
+
+        var citizenship_num = +citizenship;                                 //string to number
+        console.log(`Data of citizenship ${typeof(citizenship_num)}`);
+        
+        var citizenship_no_2 = Number(citizenship);                         //string to number
+        console.log(`Data of citizenship ${typeof(citizenship_no_2)}`);
+                                                                            
+        var citizenship_no_3 = parseInt(citizenship);                         //string to number
+        console.log(`Data of citizenship ${typeof(citizenship_no_3)}`);
+
+        var citizenship_no_4= ""+citizenship;                                 //number to string
+        console.log(`type of citizenship is ${typeof(citizenship_no_4)}`);
+
+        var citizenship_no_5= String(citizenship);                              //number to string
+        console.log(`type of citizenship is ${typeof(citizenship_no_4)}`);
+
+        var fvalue = 199.0923;                                                  //float to integer
+        var int = parseInt(fvalue);
+        console.log(`integer of ${fvalue} = ${int}`);
+
+        var ivalue = 111.11;
+        var float = parseFloat(ivalue);
+        console.log(`float value of ${ivalue} = ${float}`);
+
+
+    </script>
+</body>
+</html>
